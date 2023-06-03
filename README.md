@@ -1,31 +1,38 @@
 # CP-NITA
 
 ## CP-NITA is a competitive programming page dedicated to the passionate coding enthusiasts at the National Institute of Technology Agartala (NITA). It serves as a one-stop destination for all things related to competitive programming, offering resources, competitions, and a vibrant community.
-## Features
+Certainly! I apologize for the oversight. Let's include the additional feature in the "Features" section. Here's the updated version:
+
+### Features
 
 CP-NITA offers a range of features to support and enhance your competitive programming journey:
 
-### Learning Path and Resource Guide
+#### Learning Path and Resource Guide
 - Follow a comprehensive learning path designed to guide you from beginner to advanced levels in competitive programming.
 - Access a curated list of the best resources, tutorials, articles, and video lectures for each topic in the learning path.
-- Explore topic-wise resource guides to find the most relevant materials for specific programming concepts and algorithms.Everthing is completely Free .
+- Explore topic-wise resource guides to find the most relevant materials for specific programming concepts and algorithms.
 
-### Timeline-based Learning Roadmap
+#### Timeline-based Learning Roadmap
 - Benefit from a well-structured timeline-based learning roadmap that outlines the recommended order of topics to learn.
 - Easily visualize the progression of your learning journey and understand when to focus on each topic.
 - Stay organized and track your progress as you advance through different stages of the learning roadmap.
 
-### Integrated Code Editor and Execution
+#### Direct Access to Codeforces A2OJ Ladder
+- Gain direct access to the Codeforces A2OJ ladder problem set, a popular collection of programming problems.
+- Experience a beautiful, intuitive, and dynamic user interface that enhances your problem-solving experience.
+- Solve problems from different difficulty levels and track your progress as you climb the ladder of coding proficiency.
+
+#### Integrated Code Editor and Execution
 - Code directly in the browser using the integrated code editor that supports multiple programming languages, including C++.
 - Execute your code instantly and see the output without the need for any local setup.
 - Debug and refine your code within the same environment, streamlining your coding process.
 
-### Leaderboard and Ranking
+#### Leaderboard and Ranking
 - Compete with fellow programmers and track your progress on the CP-NITA leaderboard.
 - Earn rankings based on your performance in coding contests and challenges.
 - Gain recognition for your skills and compare your standing among other community members.
 
-### Active CP Community
+#### Active CP Community
 - Join a highly active and supportive competitive programming community.
 - Engage in discussions, ask questions, and share your knowledge with other members.
 - Collaborate on problem-solving techniques and learn from the experiences of fellow programmers.
