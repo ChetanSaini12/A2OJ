@@ -43,7 +43,7 @@ CP-NITA strives to provide a comprehensive platform that empowers competitive pr
 - **JavaScript**: The programming language that powers the interactive and dynamic behavior of CP-NITA.
 - **Monaco**: A browser-based code editor that provides a rich development environment for coding and debugging.
 
-### Back-End Technologies
+### Back-End Technologies [Backend-deployed-repo](https://github.com/Aryan20022003/A2Oj-Backend)
 - **Express**: A fast and minimalist web application framework for Node.js, serving as the backbone of the CP-NITA back-end.
 - **MongoDB**: A flexible and scalable NoSQL database used to store and manage data in a structured manner.
 - **Netlify**: A cloud-based hosting platform that enables seamless deployment and hosting of the CP-NITA front-end.
