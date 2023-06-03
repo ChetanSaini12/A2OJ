@@ -12,8 +12,10 @@
     "axios": "^1.3.6",
     "crypto-browserify": "^3.12.0",
     "daisyui": "^2.51.5",
+    "dotenv": "^16.1.3",
     "emailjs-com": "^3.2.0",
     "lottie-react": "^2.4.0",
+    "mongoose": "^7.2.2",
     "particles.js": "^2.0.0",
     "pwa-asset-generator": "^6.2.1",
     "react": "^16.14.0",
@@ -31,7 +33,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "prebuild": "rm -rf build",
+    "build": "your build command here",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

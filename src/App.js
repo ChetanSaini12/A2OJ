@@ -15,7 +15,7 @@ import { Footer } from "./Components/Footer/Footer";
 import About from "./Components/Abouts/About";
 import LaddersPage from "./Components/A2oj_M/ladders/[laddersId]";
 import Nopage from "./Components/Nopage/Nopage";
-
+import Form from "./Components/Form/form";
 
 function App() {
   useEffect(() => {
@@ -48,7 +48,8 @@ function App() {
             <Route path="/code-editor" element={<CodeEditor />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/ladders" element={<LaddersPage />}></Route>
-            <Route path="*" element={<Nopage/>} />
+            <Route path="*" element={<Nopage />} />
+            {/* <Route path="/form" element={<Form />} /> just for testing purpose*/}
           </Routes>
           <Footer />
         </BrowserRouter>

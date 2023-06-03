@@ -4,7 +4,6 @@ import "./codeEditor.css";
 import React, { useState } from "react";
 import { useRef, useEffect } from "react";
 import Editor from "@monaco-editor/react";
-import Issue from "../Issue/Issue";
 import axios from "axios";
 
 const CodeEditor = () => {
@@ -25,18 +24,19 @@ const CodeEditor = () => {
   }
   function submitCode(e) {
     console.log("Clicked");
-    axios.post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
-      code: code,
-      input: input,
-    }).then((res) => {
-      // console.log(res.data)
-      setOutput(res.data);
-    }
-    ).catch((err) => {
-      // console.log(err.response.data);
-      setOutput(err.response.data);
-    }
-    );
+    axios
+      .post("https://glamorous-sunglasses-toad.cyclic.app/run", {
+        code: code,
+        input: input,
+      })
+      .then((res) => {
+        // console.log(res.data)
+        setOutput(res.data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+        setOutput(err.message);
+      });
   }
 
   useEffect(() => {
