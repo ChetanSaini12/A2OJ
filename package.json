@@ -33,8 +33,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "rm -rf build",
-    "build": "your build command here",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

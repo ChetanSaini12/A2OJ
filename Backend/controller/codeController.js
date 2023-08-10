@@ -19,6 +19,7 @@ const codeRunner = async (req, res) => {
     );
     res.send(result.data.output);
   } catch (error) {
+    console.log("code editor mar gaya")
     res.send(error.output);
   }
 };
