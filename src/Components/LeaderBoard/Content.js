@@ -37,23 +37,26 @@ function Content(props) {
   };
 
   useEffect(() => {
-    let url = `https://codeforces.com/api/user.info?handles=Mayur9agt;SHARAD_0_1;pravesh_2505;arya_afzal;Rishant_07;nishant0129;kumarabhishek0776;127001evil;dipayan2002;arupdeb00;kvdmt2401;Adityaraj5200;prathamnagaria;Afk-Akash;qwertynoob;charan_kumar;saurabhm04;Ancore;anubhavsingh11;ankitraj00;Kritanjali_Chakraborty11;puja_dutta2109;vishal_deep;ishansingh3091;samrat_53;nehalsriva1508;Sudip_karmakar25;Raj_Tiwari;Gaurav_raj_54646;ayush_udy;debargha_deb;vkpmail019;7288saurabhkumar;ankit0003;sriramsanthosh;ravi.ranjan;Keshav178;ankitgirase27;PRIME3015;Aman_singh0;____V;jon-snow23;Zamiul043;mukund0007;theflash17;sebastian01;kavi_khalique;pradeptakandar.nita;uttamkr12;lalitkishor;demon_98;Vishnu_Sandeep;csud_1;Vanam_2021;popeyeff;ritik_kaushal;ankit0369;ekta.jain2931;pavani_koyyana;AbhinavAbhishek;indravihar15722;Manshi417;Anshuman_21;vineet_kash_p;thish;__ish-gpt__99;rahul04517;shubhamkr78700;Niraj.100;jaadu_bhaiya;rookie09;tanishqkapoor;_rohit_n;mcpigeons_04;am_kumar9955;ankit12_lucifer;ishita1053;ranjan_prabhat;recrown;rajan087;bkaurav;shashi_42;harsh_agarwal30;six_05;ankit748846;prakriti06;its_kundan;geeta_Krishna_dev;singh1128;adityakanu;iris-xe_i7;AwnishShahi;Courage2003;anuroop2709;JNbalraj17;21UEE091Sonali;rittikamaj21;vikram110703;parnashree_16;PriyankaSheoran;Palak_priya;rounak428;saha_rimi;Gupta2025;azmatroshan;vishu__0123;Ssaloni_009;Undead_King;HEMANT12;wintersoldier2004;Anuj_Shahi;mohit_369;dhruvg13;manish_rohila;aman0037;annhilator_08;Harsh_Chugh;Nilesh.ky;coder_ravan;chetan_saini;akshatverma;Govind_Singh;gourabsingha1;biprajitpaul5555;gollum123;yashpal_97;Ambika_kumar;GC_PRIYANSHU;suyasho786;ami_2025;Aryan20022003;loki_7;Tanzei;zombiedub;Tharun0102;tanyarajhans7;Simp_coder;coder_vk;aryaman3007;chandan_1357;prajna_;abhishek75230;Austin_5;VIDYASAGAR2000;Desh_Deepak_Kant;amit5012003;abhigeddam94;Angiradas;Mjxt77;SATYENDRA_JANGID;Debajyoti_2003;Adarsh1662;alok64;shubha2003;vedant_vaidya_77;saumyadipdeb07;Prime9431;SamIsTheFBI;riya2025;oohomohit;shikha_01;suraj_nita;ravishankar_tiwari;aryan_619;anuj_7072a;Aman_Sirmaur19;Praths;Parthib_Nita;Manish81912;praveennqumar;Ragefury123;satwikgupta18;gouravmajumder6;Akshatawasthi;Raj225;su01;erpranjal;muskangupta30;DevilDeepak;debanshuswag;ishitakar2003;aditya_raj1719;neel2022;aadiXD;Ritika5136;anjalisingh22122003;abhirajjha_001;Saptadipa;li_ght;Mayank_NitA;Kaithedevil;coder_adi07;`;
+    const fetchData = async () => {
+      try {
+        let url = `https://codeforces.com/api/user.info?handles=Mayur9agt;SHARAD_0_1;pravesh_2505;arya_afzal;Rishant_07;nishant0129;kumarabhishek0776;127001evil;dipayan2002;arupdeb00;kvdmt2401;Adityaraj5200;prathamnagaria;Afk-Akash;qwertynoob;charan_kumar;saurabhm04;Ancore;anubhavsingh11;ankitraj00;Kritanjali_Chakraborty11;puja_dutta2109;vishal_deep;ishansingh3091;samrat_53;nehalsriva1508;Sudip_karmakar25;Raj_Tiwari;Gaurav_raj_54646;ayush_udy;debargha_deb;vkpmail019;7288saurabhkumar;ankit0003;sriramsanthosh;ravi.ranjan;Keshav178;ankitgirase27;PRIME3015;Aman_singh0;____V;jon-snow23;Zamiul043;mukund0007;theflash17;sebastian01;kavi_khalique;pradeptakandar.nita;uttamkr12;lalitkishor;demon_98;Vishnu_Sandeep;csud_1;Vanam_2021;popeyeff;ritik_kaushal;ankit0369;ekta.jain2931;pavani_koyyana;AbhinavAbhishek;indravihar15722;Manshi417;Anshuman_21;vineet_kash_p;thish;__ish-gpt__99;rahul04517;shubhamkr78700;Niraj.100;jaadu_bhaiya;rookie09;tanishqkapoor;_rohit_n;mcpigeons_04;am_kumar9955;ankit12_lucifer;ishita1053;ranjan_prabhat;recrown;rajan087;bkaurav;shashi_42;harsh_agarwal30;six_05;ankit748846;prakriti06;its_kundan;geeta_Krishna_dev;singh1128;adityakanu;iris-xe_i7;AwnishShahi;Courage2003;anuroop2709;JNbalraj17;21UEE091Sonali;rittikamaj21;vikram110703;parnashree_16;PriyankaSheoran;Palak_priya;rounak428;saha_rimi;Gupta2025;azmatroshan;vishu__0123;Ssaloni_009;Undead_King;HEMANT12;wintersoldier2004;Anuj_Shahi;mohit_369;dhruvg13;manish_rohila;aman0037;annhilator_08;Harsh_Chugh;Nilesh.ky;coder_ravan;chetan_saini;akshatverma;Govind_Singh;gourabsingha1;biprajitpaul5555;gollum123;yashpal_97;Ambika_kumar;GC_PRIYANSHU;suyasho786;ami_2025;Aryan20022003;loki_7;Tanzei;zombiedub;Tharun0102;tanyarajhans7;Simp_coder;coder_vk;aryaman3007;chandan_1357;prajna_;abhishek75230;Austin_5;VIDYASAGAR2000;Desh_Deepak_Kant;amit5012003;abhigeddam94;Angiradas;Mjxt77;SATYENDRA_JANGID;Debajyoti_2003;Adarsh1662;alok64;shubha2003;vedant_vaidya_77;saumyadipdeb07;Prime9431;SamIsTheFBI;riya2025;oohomohit;shikha_01;suraj_nita;ravishankar_tiwari;aryan_619;anuj_7072a;Aman_Sirmaur19;Praths;Parthib_Nita;Manish81912;praveennqumar;Ragefury123;satwikgupta18;gouravmajumder6;Akshatawasthi;Raj225;su01;erpranjal;muskangupta30;DevilDeepak;debanshuswag;ishitakar2003;aditya_raj1719;neel2022;aadiXD;Ritika5136;anjalisingh22122003;abhirajjha_001;Saptadipa;li_ght;Mayank_NitA;Kaithedevil;coder_adi07;`;
 
-    fetch("https://glamorous-sunglasses-toad.cyclic.app/user")
-      .then((response) => response.json())
-      .then((data) => {
-        url += data.data;
-        // console.log(data);
-      })
-      .catch((error) => {
-        console.log("using backup string");
-      });
+        const response = await fetch("http://localhost:3500/user");
+        const data = await response.json();
 
-    fetch(url)
-      .then((result) => result.json())
-      .then((result) => {
-        if (result.status === "OK") {
-          const sortedItems = result.result.sort((a, b) => {
+        if (response.ok) {
+          url += data.data;
+          console.log(url);
+          console.log("backend data", data.data);
+        } else {
+          console.log("Using predefined URL");
+        }
+
+        const result = await fetch(url);
+        const jsonResult = await result.json();
+
+        if (jsonResult.status === "OK") {
+          const sortedItems = jsonResult.result.sort((a, b) => {
             if (iscur === 1) {
               return b.rating - a.rating;
             } else if (iscur === 2) {
@@ -68,15 +71,15 @@ function Content(props) {
           });
 
           setItems(sortedItems);
-        }
-        if (result.status === "FAILED") {
-          // console.log("Error");
+        } else if (jsonResult.status === "FAILED") {
           setError("Error");
         }
-      })
-      .catch((err) => {
-        setError(err.response);
-      });
+      } catch (error) {
+        setError(error.response);
+      }
+    };
+
+    fetchData();
   }, [ismax, iscur]);
 
   const [isExpanded, setIsExpanded] = useState(false);

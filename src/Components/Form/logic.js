@@ -15,16 +15,13 @@ export const verification = async function (userId) {
 export const postData = async function (userId) {
   try {
     console.log("entered");
-    const response = await fetch(
-      `https://glamorous-sunglasses-toad.cyclic.app/user/${userId}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({}),
-      }
-    );
+    const response = await fetch(`http://localhost:3500/user/${userId}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({}),
+    });
     // console.log(response, "from here bitch");
     if (!response.ok) {
       return 0;

@@ -5,8 +5,8 @@ const codeController = require("./controller/codeController");
 const userController = require("./controller/userController");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config;
-const hpp=require('hpp');
-const mongoSanitize=require('express-mongo-sanitize');
+const hpp = require("hpp");
+const mongoSanitize = require("express-mongo-sanitize");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json("10kb"));
@@ -29,8 +29,6 @@ mongoose
 app.use(hpp());
 app.use(mongoSanitize());
 
-
-
 app.post("/run", codeController);
 app.get("/user", userController.getUser);
 app.post("/user/:userId", userController.createUser);
@@ -39,8 +37,8 @@ app.get("/isitworking", (req, res) => {
   res.send("pong");
 });
 
-app.all('*', (req, resp, next) => {
-  const error = new Error('invalid route');
+app.all("*", (req, resp, next) => {
+  const error = new Error("invalid route");
   error.status = 404;
   next(error);
 });
@@ -50,4 +48,4 @@ app.use((error, req, res, next) => {
   res.status(error.status).json(error);
 });
 
-app.listen(3579, () => console.log("Server running on port 3579"));
+app.listen(3500, () => console.log("Server running on port 3500"));
