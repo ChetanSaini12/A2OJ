@@ -14,7 +14,7 @@ const ContestBody = (props) => {
  
   const fetchData = async () => {
     try {
-      await axios.get(`http://localhost:7000/schedule/${slug}`).then((res)=>{
+      await axios.get(`http://localhost:3500/schedule/${slug}`).then((res)=>{
         const {data}=res
         data.sort((a, b) => a.remaining_time - b.remaining_time);
         setContests(data);
