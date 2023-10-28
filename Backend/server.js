@@ -33,6 +33,9 @@ app.post("/run", codeController);
 app.get("/user", userController.getUser);
 app.post("/user/:userId", userController.createUser);
 
+const contestRouter = require("./routes/schedule");
+app.use("/schedule", contestRouter);
+
 app.get("/isitworking", (req, res) => {
   res.send("pong");
 });

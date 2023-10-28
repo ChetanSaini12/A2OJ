@@ -1,5 +1,5 @@
 {
-  "name": "hackhathon",
+  "name": "cphub-dcc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "aos": "^2.3.4",
     "axios": "^1.3.6",
     "crypto-browserify": "^3.12.0",
-    "daisyui": "^2.51.5",
+    "daisyui": "^3.9.3",
     "dotenv": "^16.1.3",
     "emailjs-com": "^3.2.0",
     "lottie-react": "^2.4.0",
@@ -64,4 +64,5 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.2"
   }
+  
 }

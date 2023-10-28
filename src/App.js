@@ -15,6 +15,7 @@ import { Footer } from "./Components/Footer/Footer";
 import About from "./Components/Abouts/About";
 import LaddersPage from "./Components/A2oj_M/ladders/[laddersId]";
 import Nopage from "./Components/Nopage/Nopage";
+import Contest from "./Components/Contest"
 import Form from "./Components/Form/form";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route index path="/home" element={<Hero />}></Route>
             <Route path="/a2oj" element={<A2oj_M />}></Route>
             <Route path="/leaderboard" element={<LeaderBoard />}></Route>
+            <Route path="/contest" element={<Contest/>} ></Route>
             <Route path="/roadmap" element={<Roadmap />}></Route>
             <Route path="/code-editor" element={<CodeEditor />}></Route>
             <Route path="/about" element={<About />}></Route>
