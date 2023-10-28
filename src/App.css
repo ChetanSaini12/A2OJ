@@ -27,7 +27,7 @@ html {
   color: white;
 }
 
-#about, #roadmap, #leaderboard, #code-editor, #a2oj, #ladder, #nopage {
+#about, #roadmap, #leaderboard, #code-editor, #a2oj, #ladder, #nopage, #contest {
   position: relative;
   top: 5rem;
 }

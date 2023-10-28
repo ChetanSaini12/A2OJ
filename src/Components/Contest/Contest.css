@@ -1,0 +1,96 @@
+
+
+/* Contest */
+.tabSection{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .tabs{
+    width: 90%;
+  }
+  @media (max-width: 651px) {
+    .tabs.flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .tab{
+      width: 90%;
+    }
+    .tab-lifted{
+      border-bottom: none !important;
+    }
+    .tab-lifted.tab-active:after {
+      display: none !important;
+    } 
+    .tab-lifted.tab-active::before{
+      display: none !important;
+    } 
+  }
+  .tab-lifted {
+    --tab-border-color: rgb(255, 255, 255) !important;
+  }
+  
+  
+  /*Contest Body*/
+  #contestbody tbody tr:hover{
+    background-color: #484836;
+  }
+  
+  #contestbody tr:nth-child(even){
+    background-color: #2a2a40;
+  }
+  
+  #contestbody .table :where(thead, tbody) :where(tr:not(:last-child)) {
+    border-bottom: 1px solid #484836;
+  }
+  
+  #contestbody .count_down{
+    font-size: x-small;
+  
+  }
+  
+  #contestbody .count_down span{
+    font-size: 1rem;
+  }
+  
+  .count_down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .count_down span {
+    margin: 0 4px;
+    padding: 3px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+  }
+  
+  .count_down span span {
+    font-weight: bold;
+  }
+  
+  #contestbody th, td{
+    text-align: center;
+    
+  }
+  
+  .contestBody_loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .contestBody_loading .lottie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  

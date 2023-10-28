@@ -30,7 +30,6 @@ const CodeEditor = () => {
         input: input,
       })
       .then((res) => {
-        // console.log(res.data)
         setOutput(res.data);
       })
       .catch((err) => {

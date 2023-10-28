@@ -27,6 +27,9 @@ export const Footer = () => {
                             <NavLink to="/leaderboard">Leaderboard</NavLink>
                         </p>
                         <p>
+                            <NavLink to="/contest">Contest</NavLink>
+                        </p>
+                        <p>
                             <NavLink to="/roadmap">Roadmap</NavLink>
                         </p>
                         <p>
@@ -67,29 +70,28 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div className='events-hidden'>
-                        <div className="flex flex-row justify-between px-4">
+                        <div className="flex flex-row justify-between">
                             <span>
                                 <NavLink to="/home">Home</NavLink>
                             </span>
                             <span>
                                 <NavLink to="/a2oj">A2OJ</NavLink>
                             </span>
+                            <span>
+                                <NavLink to="/contest">Contest</NavLink>
+                            </span>
+                        </div >
+                        <div className="flex flex-row justify-center">
+                            <span>
+                                <NavLink to="/leaderboard">Leaderboard</NavLink>
+                            </span>
+                            <span>
+                                <NavLink to="/roadmap">Roadmap</NavLink>
+                            </span>
                             <span >
                                 <NavLink to="/about">About</NavLink>
                             </span>
                         </div >
-                        <div className="flex flex-row justify-center gap-5">
-
-                            <span>
-                                <NavLink to="/roadmap">Roadmap</NavLink>
-                            </span>
-                            <span>
-                                <NavLink to="/code-editor">Code Editor</NavLink>
-                            </span>
-                            <span>
-                                <NavLink to="/leaderboard">Leader board</NavLink>
-                            </span>
-                        </div>
                     </div>
                 </div>
             </div>

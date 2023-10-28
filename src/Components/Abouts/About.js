@@ -1,33 +1,6 @@
-// import React, { useState } from "react";
-// import './Faq.css'
-// import { Fade } from "react-reveal";
-
-// const FAQs = () => {
-// 	return (
-// 		<>
-// 			<SectionTitle title="About" />
-
-// 		</>
-// 	);
-// }
-
-// function Faq({ faq }) {
-
-// 	const [open, setOpen] = useState(false);
-
-// 	return (
-// 		<Fade bottom>
-
-// 		</Fade>
-// 	);
-// }
-
-// export { Faq, FAQs };
-
 import React from "react";
 import SectionTitle from "../SectionTitle";
 import { useEffect } from "react";
-// import thanos from "./thanos.jpg";
 import "./About.css";
 import { BsLinkedin } from "react-icons/bs";
 import { SiCodeforces } from "react-icons/si";
@@ -154,17 +127,14 @@ export default function About() {
       <SectionTitle title="About" />
 
       <div>
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css"
           rel="stylesheet"
-        />
+        /> */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
-          {/* <h1 className="py-12 font-bold text-3xl text-center md:text-4xl lg:text-5xl font-heading text-indigo-900">
-          Check our contributors
-        </h1> */}
           <div className="grid grid-cols-1 pt-12  gap-4 hover:gap-8 sm:gap-8 sm:grid-cols-2">
             {contributors}
           </div>
