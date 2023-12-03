@@ -42,13 +42,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 830px) {
-  .Avatar {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-  }
-}
+
 
 .badge-lg {
   height: 1.5rem /* 24px */;
@@ -72,6 +66,15 @@
     line-height: 1rem /* 24px */;
     padding-left: 0.388rem /* 11.008px */;
     padding-right: 0.388rem /* 11.008px */;
+  }
+    .show-more-button {
+    padding: 4px;
+    font-size: 10px;
+  }
+    .Avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
   }
 }
 
@@ -124,12 +127,6 @@
   transition: opacity 0.2s ease-in-out;
 }
 
-@media (max-width: 830px) {
-  .show-more-button {
-    padding: 4px;
-    font-size: 10px;
-  }
-}
 
 @media (max-width: 550px) {
   .rank {

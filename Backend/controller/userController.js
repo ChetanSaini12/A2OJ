@@ -3,6 +3,11 @@ const User = require("./../model/user");
 const createUser = async function (req, res, next) {
   try {
     // console.log("entered", req.params.userId);
+    const userPrev = await User.findOne({userId : req.params.userId});
+    if(userPrev)
+    {
+      return res.status(201).json({ message: "User already exist"});
+    }
     const user = await User.create({ userId: req.params.userId });
     // console.log("exit", user);
     res.status(200).json({ message: "created successfully", data: user });
@@ -17,9 +22,8 @@ const getUser = async function getUser(req, resp, next) {
     const result = await User.aggregate([
       { $group: { _id: null, userIds: { $addToSet: "$userId" } } },
     ]);
-
+    
     const userIds = (result.length > 0 ? result[0].userIds : []).join(";");
-    console.log("request", userIds);
     resp.status(200).json({ data: userIds, status: 200 });
   } catch (error) {
     console.log("error ho gaya in userGet");

@@ -11,7 +11,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json("10kb"));
 app.use(cors());
-const DB = process.env.DB.replace("<PASSWORD>", process.env.PASSWORD);
+const DB = process.env.DB;
 
 mongoose
   .connect(DB, {
