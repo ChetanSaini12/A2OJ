@@ -47,9 +47,10 @@ const Form = (props) => {
     }, [isValidated, setIsModalOpen]);
 
     return (
-        <div className="flex items-center justify-center min-h-screen">
+        <>
             {/* Modal */}
             {isModalOpen && (
+            <div className="flex items-center justify-center min-h-screen">
                 <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center">
                     <div className="bg-yellow-50 p-4 rounded shadow-md md:w-96 w-80">
                         {isValidated ? (
@@ -92,6 +93,7 @@ const Form = (props) => {
                         )}
                     </div>
                 </div>
+            </div>
             )}
 
             {/* Button */}
@@ -101,7 +103,7 @@ const Form = (props) => {
             >
                 Open Form
             </button> enable button when what to test from route */}
-        </div>
+        </>
     );
 };
 
