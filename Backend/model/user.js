@@ -20,6 +20,6 @@ userSchema.post("save", function (error, doc, next) {
   next();
 });
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("Cfids", userSchema);
 
 module.exports = User;
